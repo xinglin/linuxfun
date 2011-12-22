@@ -1,0 +1,17 @@
+Play with linux kernels:
+  + list all processes, including its pid, uid, executable
+  + ...
+ 
+=====
+Compile:
+	$ make
+Install:
+	$ sudo make install
+destall:
+	$ sudo make destall
+reinstall:
+	$ sudo reinstall
+
+=====
+How to use it?
+	$ cat /proc/havefun
