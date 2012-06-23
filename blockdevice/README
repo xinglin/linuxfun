@@ -1,0 +1,16 @@
+An experimental block driver for having fun
+ 
+=====
+Compile:
+	$ make
+Install:
+	$ sudo make install
+destall:
+	$ sudo make destall
+reinstall:
+	$ sudo reinstall
+
+=====
+Current status:
+   1. A device called 'blockdevice0' will show up at /dev/ dir after we install
+      this module. Functions to deal with I/O requests are not implemented yet.

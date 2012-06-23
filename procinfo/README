@@ -1,0 +1,20 @@
+list all processes, including its pid, uid, executable
+ 
+=====
+Compile:
+	$ make
+Install:
+	$ sudo make install
+destall:
+	$ sudo make destall
+reinstall:
+	$ sudo reinstall
+
+=====
+How to use it?
+	$ cat /proc/procinfo
+
+=====
+BUGS:
+  1. In later versions, max_mapnr is not defined or exported. So, you can 
+     comment out max_mapnr.
