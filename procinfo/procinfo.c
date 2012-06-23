@@ -14,8 +14,8 @@
 #include <linux/err.h>
 
 #define DRIVER_AUTHOR "Xing Lin@utah"
-#define DRIVER_DESC   "Have fun with Linux kernels"
-#define proc_fn       "havefun"
+#define DRIVER_DESC   "Display basic information about processes"
+#define proc_fn       "procinfo"
 
 extern struct page *mem_map;
 extern unsigned long num_physpages;
@@ -116,7 +116,7 @@ static int __init
 lkp_init(void)
 {
 	struct proc_dir_entry *proc_file = NULL;
-	printk(KERN_INFO "Hello from have fun module\n");
+	printk(KERN_INFO "Hello from procinfo module\n");
 	printk("num_physpages: %lu, max_mapnr: %lu\n", num_physpages,
 	       max_mapnr);
 	proc_file = create_proc_entry(proc_fn, 0644, NULL);
@@ -134,7 +134,7 @@ static void __exit
 lkp_cleanup(void)
 {
 	remove_proc_entry(proc_fn, NULL);
-	printk(KERN_INFO "Exit from have fun module\n");
+	printk(KERN_INFO "Exit from procinfo module\n");
 }
 
 MODULE_LICENSE("GPL");

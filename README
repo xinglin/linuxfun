@@ -1,8 +1,10 @@
-Play with linux kernels:
-  + list all processes, including its pid, uid, executable
-  + ...
+Have fun with linux kernels:
+  + procinfo: list all processes, including its pid, uid, executable
+  + blockdevice: an experimental block device
  
 =====
+Test against the 2.6.32-24 version.
+
 Compile:
 	$ make
 Install:
@@ -14,4 +16,4 @@ reinstall:
 
 =====
 How to use it?
-	$ cat /proc/havefun
+  read README in each dir for more specific instructions	
