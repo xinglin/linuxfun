@@ -1,7 +1,7 @@
 Have fun with linux kernels:
-  + procinfo: list all processes, including its pid, uid, executable
-  + blockdevice: an experimental block device
- 
+  + procinfo: list all processes, including its pid, uid, executable [finished]
+  + block/rbd: a simple ram based block device                       [inprocess]  + block/nbd: network block device                                  [planned]
+
 =====
 Test against the 2.6.32-24 version.
 

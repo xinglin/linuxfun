@@ -13,7 +13,7 @@ enum {
 	CD_CMD_DISC = 2
 };
 
-struct expr_device {
+struct rbd_device {
 	int flags;
 	int magic;
 	
@@ -23,7 +23,8 @@ struct expr_device {
 	
 	struct gendisk *disk;
 	int blksize;
-	u64 bytesize;
+	u64 nblocks;
+    u8* data;
 	pid_t pid;
 	int xmit_timeout;
 };

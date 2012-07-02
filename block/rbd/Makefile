@@ -1,8 +1,8 @@
 #
 # Modules and the files they are made from
 #
-BLOCKDRIVER = blockdriver
-MODULES = $(BLOCKDRIVER) 
+RBDDRIVER = rbd
+MODULES = $(RBDDRIVER) 
 CFILES = $(MODULES:=.c)
 OBJFILES = $(CFILES:.c=.o)
 KOFILES = $(OBJFILES:.o=.ko)
@@ -13,7 +13,7 @@ obj-m += $(OBJFILES)
 %.o: %.c
 %.ko: %.o
 
-obj-m += blockdriver.o
+obj-m += rbd.o
 
 KVERSION = $(shell uname -r)
 all:
@@ -25,8 +25,8 @@ clean:
 # Convience targets
 #
 
-install: $(BLOCKDRIVER).ko
-	insmod $(BLOCKDRIVER).ko
+install: $(RBDDRIVER).ko
+	insmod $(RBDDRIVER).ko
 
 deinstall:
 	rmmod $(KOFILES)

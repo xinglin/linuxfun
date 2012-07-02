@@ -1,4 +1,4 @@
-An experimental block driver for having fun
+A simple Ram backed block device driver for having fun
  
 =====
 Compile:
@@ -12,5 +12,5 @@ reinstall:
 
 =====
 Current status:
-   1. A device called 'blockdevice0' will show up at /dev/ dir after we install
+   1. A device called 'ramdisk0' will show up at /dev/ dir after we install
       this module. Functions to deal with I/O requests are not implemented yet.
