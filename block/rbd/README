@@ -1,4 +1,8 @@
 A simple Ram backed block device driver for having fun
+   
+After installation of the module, a device called 'rbd0' will show up at 
+/dev/ dir and can be used as other block devices(e.g: use fdisk and mkfs,
+you can create partitions and file systems on this device.). 
  
 =====
 Compile:
@@ -10,7 +14,10 @@ destall:
 reinstall:
 	$ sudo reinstall
 
-=====
-Current status:
-   1. A device called 'ramdisk0' will show up at /dev/ dir after we install
-      this module. Functions to deal with I/O requests are not implemented yet.
+====
+related resources:
+	1. A more recent version of simple block decie: 
+       http://blog.superpat.com/2010/05/04/a-simple-block-driver-for-linux-kernel-2-6-31/
+	2. A bit of dated version: 
+	   http://lwn.net/Articles/58719/
+	3. http://tldp.org/LDP/khg/HyperNews/get/devices/block.html

@@ -1,9 +1,13 @@
 Have fun with linux kernels:
-  + procinfo: list all processes, including its pid, uid, executable [finished]
-  + block/rbd: a simple ram based block device                       [inprocess]  + block/nbd: network block device                                  [planned]
+  + procinfo:  [finished]
+        list all processes, including its pid, uid and executable
+  + block/rbd: [inprocess]
+        a simple ram based block device
+  + block/nbd: [planned] 
+        network block device
 
 =====
-Test against the 2.6.32-24 version.
+Test against the 2.6.32-24 Linux kernel
 
 Compile:
 	$ make

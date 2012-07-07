@@ -18,8 +18,6 @@ struct rbd_device {
 	int magic;
 	
 	spinlock_t queue_lock;
-	struct list_head queue_head;	/* Requests waiting result */
-	struct list_head waiting_queue;	/* Requests to be sent */
 	
 	struct gendisk *disk;
 	int blksize;
