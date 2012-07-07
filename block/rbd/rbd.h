@@ -1,7 +1,3 @@
-/*
- * 2012 Copyright (C) note.
- * Data structure is learned from /include/linux/nbd.h
- */
 #ifndef LINUX_BLOCKDRIVER_H
 #define LINUX_BLOCKDRIVER_H
 
@@ -22,7 +18,7 @@ struct rbd_device {
 	struct gendisk *disk;
 	int blksize;
 	u64 nblocks;
-    u8* data;
+	u8* data;
 	pid_t pid;
 	int xmit_timeout;
 };

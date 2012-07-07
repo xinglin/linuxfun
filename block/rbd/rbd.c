@@ -100,7 +100,7 @@ static int __init rbd_init(void)
 	unsigned int major = UNNAMED_MAJOR;
 	
 	dev.blksize = 512;
-    dev.nblocks = nsectors;
+	dev.nblocks = nsectors;
 	spin_lock_init(&dev.queue_lock);
 	dev.data = vmalloc(dev.blksize * dev.nblocks);
 	if (dev.data == NULL)
